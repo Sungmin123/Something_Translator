@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/input_text"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:text="@string/input_text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
+
+    <Spinner
+        android:id="@+id/language_source"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/input_text"
+        app:layout_constraintTop_toBottomOf="@id/input_text" />
+
+    <Button
+        android:id="@+id/switch_button"
+        android:layout_width="110dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/switch_button"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@id/input_text"
+        app:layout_constraintTop_toBottomOf="@id/input_text" />
+
+    <Space
+        android:id="@+id/space_between"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="49dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_source" />
+
+    <TextView
+        android:id="@+id/output_text"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/textview_border"
+        android:padding="10dp"
+        android:text="@string/output_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/space_between" />
+
+    <Button
+        android:id="@+id/home_button"
+        android:layout_width="77dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/home"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/output_text" />
+
+    <Spinner
+        android:id="@+id/language_options"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:layout_marginLeft="164dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        app:layout_constraintStart_toStartOf="@id/output_text"
+        app:layout_constraintTop_toBottomOf="@id/output_text" />
+
+    <ImageButton
+        android:id="@+id/voice_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:contentDescription="@string/voice_Button"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_speech"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/language_options">
+    </ImageButton>
+
+    <Button
+        android:id="@+id/translate_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/translate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/voice_button" />
+
+    <Button
+        android:id="@+id/speak_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/speak"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/translate_button" />
+
+    <Button
+        android:id="@+id/clear_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginLeft="124dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_horizontal"
+        android:text="@string/clear"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/speak_button" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

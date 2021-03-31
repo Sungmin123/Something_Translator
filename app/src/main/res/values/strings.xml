@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Something Translator</string>
+    <string name="input_text">Click the button to start translating!</string>
+    <string name="voice_Button">TODO</string>
+    <string name="translate">Translate</string>
+    <string name="clear">Clear</string>
+    <string name="input_text2">Click the microphone icon to start! (Currently only works in english)</string>
+    <string name="write_text">Write and click translate to get started!</string>
+    <string name="output_text">This is where the translated sentence will show!</string>
+    <string name="switch_button">Text version</string>
+    <string name="speech_version">Speech Version</string>
+    <string name="title">Something Translator</string>
+    <string name="speech_version2">Speech Version</string>
+    <string name="text_version">Text Version</string>
+    <string name="title_string">Something Translator</string>
+    <string name="home">Home</string>
+    <string name="speak">Speak</string>
+
+
+</resources>
